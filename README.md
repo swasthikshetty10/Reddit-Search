@@ -1,2 +1,2 @@
 ### Hello 
-### project website visit : [CensorLabel](https://kuchhb.herokuapp.com/)
+### project website visit : [KuchhB.herokuapp.com](https://kuchhb.herokuapp.com/)
