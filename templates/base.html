@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ᴋᴜᴄʜʜ ʙ</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <script data-ad-client="ca-pub-4376712269282648" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+  <nav class = "deep-purple lighten-1">
+    <div class="container nav-wrapper ">
+        <a href="/" class="brand-logo" ><b style="color: #e4dada">ᴋᴜᴄʜʜ ʙ</b></a>
+        <ul id="nav-mobile" class="right">
+            <li><a href="/">Home</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h1 style="text-align: center"><p style="color: #ff8a65"></p></h1>
+    <div class="row">
+        <div class="col s4">
+           
+            <div class="center">
+                <i class="large material-icons" style="color: #fad818">toys</i>
+                <p>Interactive Webpage</p>
+                <p class="light center">Made with ❤️</p>
+            </div>
+        </div>
+
+        <div class="col s4">
+           
+            <div class="center">
+                <i class="large material-icons" style="color: #e92930">photo_library</i>
+                <p>Images</p>
+                <p class="light center">Lots of posts from reddit  🤟</p>
+            </div>
+        </div>
+        <div class="col s4">
+           
+            <div class="center">
+                <i class="large material-icons" style="color: rgb(0, 0, 0)">search</i>
+                <p>Search</p>
+                <p class="light center">search your needs😎</p>
+            </div>
+        </div>
+
+        
+    <!--
+    visibility_off
+
+        
+
+        <div class="col s4">
+           
+            <div class="center">
+                <i class="large material-icons" style="color: blue">chrome_reader_mode</i>
+                <p>A much sexier front-end to Craigslist</p>
+                <p class="light center">We built this with ❤️</p>
+            </div>
+        </div>
+    </div>
+      -->
+    
+      <form action="{% url 'new_search'%}" method="post">
+        {% csrf_token %}
+        <input type="text" name="search" value="" placeholder="search">
+        <button class="btn waves-effect waves-light" type="submit" name="action" color="">Submit
+            <i class="material-icons right">send</i>
+        </button>
+    </form>
+    </div>
+    </div>
+    
+    {% block content %}
+
+    <div class = "botnav">
+        <p class="light center" style="color : rgb(207, 218, 215) ">Made by !ΞPAX㋡#2215</p>
+        <p class="light center"><a  href ="https://discord.gg/aUppFDZ">Join Discord</a></p>
+    </div>
+    {% endblock content %}
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
